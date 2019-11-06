@@ -1,6 +1,6 @@
 ﻿![A Markdown Logo Image](./Markdown_logo_256x158.png "Markdown logo")
 
-<img align=”right” width=”100" height=”100" 
+<img align=”right” width=”128" height=”79" 
 src="./Markdown_logo_256x158.png">
 
 # What's Markdown?
