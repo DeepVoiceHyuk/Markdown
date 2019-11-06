@@ -93,7 +93,6 @@ kick the tires - test the quality of something; see if something is suitable for
 
 
 ![A Helpful Tips Image](https://lh3.googleusercontent.com/UqJaOqKmyGZ2z0jNF8v5Yb1pXozG3jlkDjQeVgV77iA3i5oTQ2MENzPH6fGn9Z5rOQNAwvi6en0u "Helpful Tips")
-<img align=”right” width=”100" height=”100" src=”https://lh3.googleusercontent.com/UqJaOqKmyGZ2z0jNF8v5Yb1pXozG3jlkDjQeVgV77iA3i5oTQ2MENzPH6fGn9Z5rOQNAwvi6en0u">
 
 
 Markdown Formatting
