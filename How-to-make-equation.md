@@ -5,3 +5,5 @@ html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax
 \\({e}^{i\pi}+1=0\\)
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
