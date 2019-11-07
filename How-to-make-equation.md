@@ -3,3 +3,5 @@ html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax
 \( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)
 
 \\({e}^{i\pi}+1=0\\)
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
