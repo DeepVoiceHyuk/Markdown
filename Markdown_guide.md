@@ -107,6 +107,29 @@ Markdown Formatting
 ##### This is an H5 tag  
 ###### This is an H6 tag
 
+## Heading - Alternate Syntax
+
+Heading level 1
+===============
+
+Heading level 2
+---------------
+
+# Paragraphs
+
+To create paragraphs, use **a blank line** to separate one or more lines of text. **You should not indent paragraphs with spaces or tabs.**
+
+  > I really like using Markdown.
+  >
+  > I think I'll use it to format all of my documents from now on. 
+
+# Line Breaks
+
+To create a line break (<br>), end a line with **two or more spaces**, and then type **return**.
+
+  > This is the first line.  
+  > And this is the second line.
+
 # Emphasis 
 
 *Italic text with asterisk*
@@ -135,8 +158,30 @@ __Italic text with double underscore__
 	1. Item 3a 
 	1. Item 3b
 
-## Images
+---------------------
 
+1. First item
+2. Second item
+3. Third item
+    1. Indented item
+    2. Indented item
+4. Fourth item 
+
+## Adding Elements in Lists
+
+To add another element in a list while preserving the continuity of the list, indent the element **four spaces* or **one tab**, as shown in the following examples.
+
+### Paragraphs
+
+> *   This is the first list item.
+> *   Here's the second list item.
+>
+>     I need to add another paragraph below the second list item.
+>
+> *   And here's the third list item.
+>     > A blockquote would look great below the second list item.
+
+## Images
 ![GitHub Logo](/images/logo.png “Optional Title”)
 
 ## Links
@@ -145,13 +190,74 @@ http://github.com-automatic!
 
 [GitHub](http://github.com)
 
+### Adding Titles in Links
+
+You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in parentheses after the URL.
+
+    > My favorite search engine is [Duck Duck Go](https://duckduckgo.com **"The best search engine for privacy"**).
+
+# URLs and Email Addresses
+
+To quickly turn a URL or email address into a link, enclose it in **angle brackets**.
+
+  > <https://www.markdownguide.org>
+  > <fake@example.com>
+
+## Formatting Links
+
+To emphasize links, add asterisks before and after the brackets and parentheses.
+
+  > I love supporting the **[EFF](https://eff.org)**.
+  > This is the *[Markdown Guide](https://www.markdownguide.org)*.
+
 ## Blockquotes
 
 As Mustafa Kemal Atatürk said:
 
 >One day my mortal body will turn to dust, but the Turkish Republic will stand forever.
 
+## Blockquotes with Multiple Paragraphs
+
+Add a **>** on the **blank lines** between the paragraphs.
+
+  > > Dorothy followed her through many of the beautiful rooms in her castle.
+  >
+  > > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+  
+## Nested Blockquotes
+
+Add a **>>** in front of the paragraph you want to nest.
+
+  > > Dorothy followed her through many of the beautiful rooms in her castle.
+  >
+  > >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+## Blockquotes with Other Elements
+
+Blockquotes can contain other Markdown formatted elements. *Not all elements can be used — you’ll need to experiment to see which ones work.*
+
+  > #### The quarterly results look great!
+  >
+  > - Revenue was off the chart.
+  > - Profits were higher than ever.
+  >
+  >  *Everything* is going according to **plan**.
+
 ## Code Syntax
+
+Code blocks are normally indented **four spaces** or **one tab**. When they’re in a list, indent them **eight spaces** or **two tabs**.
+
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3.  Update the title to match the name of your website.
+
+-------------------------
 
 Use your language name with **```**.
 ```javascript
@@ -182,12 +288,42 @@ Jekyll
 This articles has many references.[^1]
 [^1]: Linus Torvals.
 
+# Escaping Tick Marks (` `)
+
+If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks (``).
+
+  > ``Use `code` in your Markdown file.``
+
 ## Horizontal Rules
 
 ***
 * * * * *
 ---
 - - - 
+
+# Escaping Characters
+
+To display a literal character that would otherwise be used to format text in a Markdown document, add a **backslash (\)** in front of the character.
+
+  > \* Without the backslash, this would be a bullet in an unordered list.
+
+## Characters You Can Escape
+
+Character |Name
+----------|-----------
+\\        | backslash
+\`        | tick mark
+\*        | asterisk
+\_        | underscore
+\{}       | curly braces
+\[]       | brackets
+\()       | parenthesis
+\#        | pound sign
+\+        | plus sign
+\-        | minus sign (hyphen)
+\.        | dot
+\!        | exclamation mark
+\|        | pipe
 
 # Markdown with HTML&CSS
 
