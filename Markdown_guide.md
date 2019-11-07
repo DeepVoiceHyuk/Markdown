@@ -41,11 +41,6 @@ When you create a Markdown-formatted file, you add Markdown syntax to the text t
 	*  [VuePress](https://vuepress.vuejs.org/) is a static site generator powered by Vue and optimized for writing technical documentation.
 	*  [Jekyll](https://www.markdownguide.org/tools/jekyll/) was mentioned earlier in the section on websites, but it’s also a good option for generating a documentation website from Markdown files. If you go this route, be sure to check out the Jekyll documentation theme.
 
-
-
-
-
-
   
 - Markdown is portable. Files containing Markdown-formatted text can be opened using virtually any application. (MS word와 같은 특정 app의 고유 파일 포맷이 아님.)
 
@@ -203,6 +198,12 @@ To quickly turn a URL or email address into a link, enclose it in **angle bracke
   > <https://www.markdownguide.org>
   > <fake@example.com>
 
+# Disabling Automatic URL Linking
+
+If you don’t want a URL to be automatically linked, you can remove the link by denoting the URL as code with tick marks.
+
+  > `http://www.example.com`
+
 ## Formatting Links
 
 To emphasize links, add asterisks before and after the brackets and parentheses.
@@ -257,7 +258,21 @@ Code blocks are normally indented **four spaces** or **one tab**. When they’re
 
 3.  Update the title to match the name of your website.
 
--------------------------
+### Fenced Code Blocks
+
+The basic Markdown syntax allows you to create code blocks by indenting lines by four spaces or one tab. If you find that inconvenient, try using **fenced code blocks**. Depending on your Markdown processor or editor, you’ll use **three tick marks (```)** or **three tildes (~~~)** on the lines **before** and **after** the code block. The best part? You don’t have to indent any lines!
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+#### Syntax Highlighting
+
+Many Markdown processors support syntax highlighting for fenced code blocks. This feature allows you to add color highlighting for whatever language your code was written in. To add syntax highlighting, **specify a language** next to the tick marks before the fenced code block.
 
 Use your language name with **```**.
 ```javascript
@@ -273,10 +288,21 @@ alert(‘Hello Markdown’);
 
 ## Tables
 
+To add a table, use **three or more hyphens (---)** to create each column’s header, and use **pipes (|)** to separate each column. You can optionally add pipes on either end of the table.
+
 First Header|Second Header
 ---------------|-------------
 Content from cell 1 | Content from cell 2
 Content in the first column|Content in the second column
+
+### Alignment
+
+You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row.
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 ## Definition Lists
 
@@ -378,9 +404,9 @@ https://medium.com/echohub/write-simple-and-effective-markdown-tips-8e01fdddd70
 
 https://www.markdownguide.org/getting-started/
 
+https://www.markdownguide.org/basic-syntax/
 
-
-
+https://www.markdownguide.org/extended-syntax/
 
 
 
